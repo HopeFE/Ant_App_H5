@@ -2,7 +2,7 @@
   <div class="container">
     <template v-if="article.title">
       <header>
-        <h3 class="title">{{article.title}}</h3>
+        <h5 class="title">{{article.title}}</h5>
         <p class="author">{{article.news_source}} {{article.create_date}}</p>
       </header>
       <hr style="margin:10px 0"></hr>

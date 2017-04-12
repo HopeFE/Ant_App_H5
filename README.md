@@ -1,4 +1,4 @@
-# antappshare
+# 爱农田APP手机页面
 
 > Vue.js(2.x)全家桶项目
 
@@ -20,14 +20,18 @@
 
 -	[手机UI库-Vux](https://vux.li/#/)
 
+-	[Vue-meta](https://github.com/declandewet/vue-meta)
+
 -	[加载数据组件-Vue-infinite-loading](https://peachscript.github.io/vue-infinite-loading/#!/slots)
 
 # 安装
-
-npm install //安装依赖包
+```
+  npm install //安装依赖包
+```
 
 # 使用
-
+```
 npm run dev     //进入开发模式
 npm run build   //打包生成的目录在dist下
 npm run build --report   //打包并生成报告
+```

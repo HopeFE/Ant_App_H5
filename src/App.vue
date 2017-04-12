@@ -14,7 +14,8 @@ export default {
 
 <style>
 body{
-  background-color:#fff
+  background-color:#fff;
+  font-size:1.3rem;
 }
 img{
   margin:6px 0;
