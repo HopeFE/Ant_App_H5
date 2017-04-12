@@ -1,21 +1,33 @@
-# antapp
+# antappshare
 
-> ntapp
+> Vue.js(2.x)全家桶项目
 
-## Build Setup
+爱农田APP的手机分享、下载等页面
 
-``` bash
-# install dependencies
-npm install
+## 数据视图控制
 
-# serve with hot reload at localhost:8080
-npm run dev
+-	[Vue2](http://cn.vuejs.org/guide/)
 
-# build for production with minification
-npm run build
+-	[路由-VueRouter2](http://router.vuejs.org/zh-cn/index.html)
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+-	[http请求-Axios](https://github.com/mzabriskie/axios)
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+-	[单项数据流-Vuex](http://vuex.vuejs.org/zh-cn/index.html)
+
+-	[VueRouter和Vuex流同步-Vuex-router-sync](https://github.com/vuejs/vuex-router-sync)
+
+## UI组件
+
+-	[手机UI库-Vux](https://vux.li/#/)
+
+-	[加载数据组件-Vue-infinite-loading](https://peachscript.github.io/vue-infinite-loading/#!/slots)
+
+# 安装
+
+npm install //安装依赖包
+
+# 使用
+
+npm run dev     //进入开发模式
+npm run build   //打包生成的目录在dist下
+npm run build --report   //打包并生成报告
