@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <script src="https://cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+  <title>爱农田APP</title>
+  <link href="https://cdn.bootcss.com/mobi.css/1.2.0/mobi.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body{background-color:#fff}
+    h1,h2,h3,h4,h5{margin:10px 0 0 0;color:#000000;font-weight: normal;}
+    hr{margin:1rem 0;}
+    img{max-width:100%;margin:6px 0}
+    p{margin:0;}
+    .author{color:#586c94;font-size:1.5rem;}
+  </style>
+  <div id="app" class="container">
+    <header>
+      <h3>{{ content.title }}</h3>
+      <p class="author">{{content.news_source}} {{content.create_date}}</p>
+    </header>
+    <hr></hr>
+    <article v-html="content.content"></article>
+  </div>
+
+  <script>
+  var vm = new Vue({
+      el: '#app',
+      data: {
+        "content": {
+          // "content": "<p style=\"TEXT-ALIGN: center; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; TEXT-INDENT: 2em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0px; FONT-SIZE: 14pt\"><img border=\"0\" src=\"http://www.ahny.gov.cn/upload/20170407/170407_1021814.jpg\"></p>\n<p style=\"TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; TEXT-INDENT: 2em; FONT-FAMILY: 宋体; MARGIN-BOTTOM: 0px; FONT-SIZE: 14pt\">3月31日，农业部副部长张桃林一行，在省农委、合肥市政府、合肥市农委、巢湖市政府、巢湖市农委相关负责人的陪同下，来到位于巢湖市&#xfffd;&#xfffd;炀镇唐嘴村的农业面源污染综合防治示范区进行现场调研。巢湖市农委副主任李立胜就示范区建设主要做法及成效进行了现场汇报.张桃林副部长一边查看现场，一边就示范区的运行机制和相关技术模式应用情况进行了详细了解。示范区建设3年来，取得了肥料直接投入量减少30%以上、化学农药使用量减少50%以上、氮磷流失减少20%以上的农业面源污染防控效果。对此，张部长给予了充分的肯定和认可，并鼓励我们将这一模式广泛推广应用。</p>",
+          // "create_date": "2017-04-10 00:00:00",
+          // "news_id": 45,
+          // "news_source": "安徽农委",
+          // "news_type": 1,
+          // "status": 1,
+          // "title": "农业部副部长张桃林一行调研巢湖市��炀农业面源污染综合防治示范区",
+          // "title_image": "http://www.ahny.gov.cn/upload/20170407/170407_1021814.jpg"
+        }
+      },
+      methods: {
+        _getContent: function (obj) {
+          this.content = obj 
+        }
+      }
+    })
+  </script>
+</body>
+</html>
