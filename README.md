@@ -18,11 +18,13 @@
 
 ## UI组件
 
--	[手机UI库-Vux](https://vux.li/#/)
-
--	[Vue-meta](https://github.com/declandewet/vue-meta)
+-	[手机CSS布局-Mobi.css](http://v1.getmobicss.com/zh-cn/docs/)
 
 -	[加载数据组件-Vue-infinite-loading](https://peachscript.github.io/vue-infinite-loading/#!/slots)
+
+## 其他
+
+-	[Vue-meta](https://github.com/declandewet/vue-meta)
 
 # 安装
 ```
