@@ -1,10 +1,8 @@
 # 爱农田APP手机页面
 
+> Vue.js(2.x)全家桶项目 爱农田APP分享、下载
+
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
-> Vue.js(2.x)全家桶项目
-
-爱农田APP的手机分享、下载等页面
 
 ## 数据视图控制
 
