@@ -94,7 +94,7 @@ export default {
   padding: 8px 10px;
 }
 .bottom_fixed{
-  position:fixed;width:29rem;bottom:0;background:#fff;height:auto;padding-bottom:10px;
+  position:fixed;width:100%;bottom:0px;right:0;background:#fff;height:auto;padding: 10px;
 }
 .title{
   margin-top:20px;
