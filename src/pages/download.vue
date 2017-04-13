@@ -17,9 +17,6 @@ import wechatmask from '@/components/mask'
 
 export default {
   name: 'download',
-  metaInfo: {
-    title: '爱农田APP下载'
-  },
   components: {
     wechatmask
   },
@@ -30,6 +27,9 @@ export default {
     return {
       show: false
     }
+  },
+  metaInfo: {
+    title: '爱农田APP下载'
   },
   methods: {
     _download () {

@@ -37,17 +37,20 @@ import InfiniteLoading from 'vue-infinite-loading'
 
 export default {
   name: 'article',
-  metaInfo () {
-    return {
-      title: this.article.title
-    }
-  },
   components: {
     InfiniteLoading, wechatmask
+  },
+  computed: {
+    ...mapGetters(['system', 'isWeixin', 'article', 'id'])
   },
   data () {
     return {
       show: false
+    }
+  },
+  metaInfo () {
+    return {
+      title: this.article.title
     }
   },
   methods: {
@@ -80,8 +83,9 @@ export default {
       this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset')
     }
   },
-  computed: {
-    ...mapGetters(['system', 'isWeixin', 'article', 'id'])
+  activated () {
+    this.clearArticle()
+    this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset')
   }
 }
 </script>

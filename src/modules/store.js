@@ -1,5 +1,6 @@
 import * as actions from './actions'
 import * as types from './mutationTypes'
+
 const state = {
   system: (/iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase()) ? 'IOS' : 'Android'),
   article: {},
