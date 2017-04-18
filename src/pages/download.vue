@@ -37,7 +37,7 @@ export default {
       if (this.isWeixin && this.system === 'Android') {
         this.show = true
       } else {
-        (this.system === 'IOS' ? window.location.href = 'http://baidu.com/ios' : window.location.href = 'http://baidu.com')
+        (this.system === 'IOS' ? window.location.href = 'https://appsto.re/cn/2jqVhb.i' : window.location.href = 'http://peifeifarmer.qmant.com/apk/ant_farmer.apk')
       }
     },
     _onHide () {

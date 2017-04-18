@@ -4,7 +4,7 @@ import 'es6-promise/auto'
 
 axios.defaults.timeout = 8000
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
-axios.defaults.baseURL = (process.env.NODE_ENV === 'development' ? 'http://192.168.5.108:9004/noa/' : 'http://192.168.5.108:9004/noa/')
+axios.defaults.baseURL = (process.env.NODE_ENV === 'development' ? 'http://192.168.5.108:9004/noa/' : 'http://peifeifarmer.qmant.com/noa/')
 
 // POST传参序列化
 axios.interceptors.request.use((config) => {
