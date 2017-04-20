@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 20 * (clientWidth / 720) + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+  <title>芜湖扬子农商行劝耕贷</title>
+  <link href="https://cdn.bootcss.com/mobi.css/1.2.0/mobi.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body{background-color:#fff;font-size:1.4rem;color:#6e7d83;}
+    h1,h2,h3,h4,h5{margin:10px 0 0 0;color:#000000;font-weight: normal;}
+    hr{margin:1rem 0;}
+    img{max-width:100%;}
+    p{margin:0;}
+    .zt_article{padding:1.5rem 1.5rem 0 1.5rem;}
+    .flex-left{margin:1.5rem 0;}
+    .btn-primary{
+      background-color:#5770FF;
+      border-color:#5770FF;
+    }
+  </style>
+  <header>
+    <img src="./assets/1/head.jpg" >
+  </header>
+  <article class="zt_article">
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>服务对象 :</b></div>
+      <div class="unit-3-4 site-box">新型职业农民、家庭农场、种植大户、农民专业合作社、农业社会化服务组织</div>
+    </div>
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>贷款条件 :</b></div>
+      <div class="unit-3-4 site-box">经营主体负责人年龄在18周岁至60周岁之间，具有完全民事行为能力；无不良征信记录，有一定偿还能力</div>
+    </div>
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>贷款额度 :</b></div>
+      <div class="unit-3-4 site-box">1.种植大户等，一般情况下，单户额度起点为10万元，最高300万元，贷款期限1至3年。<br/>
+      2.农业产业化龙头企业，根据贷款人的生产经营状况和偿还能力合理确定，一般情况下，最高融资额度不超过5000万元, 期限为1年，最长不超过3年。</div>
+    </div>
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>授信期限 :</b></div>
+      <div class="unit-3-4 site-box">授信期限一年。最高可一次授信3年，在授信期及授信额度内随用随贷，循环使用。</div>
+    </div>
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>利率费率 :</b></div>
+      <div class="unit-3-4 site-box">执行国家贷款同期基准利率，最高上浮不超过20%；担保费率1.2%。一年期贷款成本年化不超过6.42%，月息5厘35。</div>
+    </div>
+    <div class="flex-left">
+      <div class="unit-1-4 site-box"><b>还款方式 :</b></div>
+      <div class="unit-3-4 site-box">随借随还，按季或月结息，到期还本。</div>
+    </div>
+  </article>
+  <footer>
+    <div class=" flex-center site-box" style="margin-bottom:1rem">
+      <div class="unit-3-4 site-box">
+        <a href="tel:15155315200" class="btn btn-primary">电话咨询</a>
+      </div>
+    </div>
+    <img src="./assets/1/footer.jpg">
+  </footer>
+</body>
+</html>
