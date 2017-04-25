@@ -78,6 +78,6 @@ export default {
 .antmask_weixin__tip{
   position: absolute;
   right:0;
-  top:0;
+  top:-6px;
 }
 </style>

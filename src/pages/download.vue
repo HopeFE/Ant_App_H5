@@ -7,7 +7,7 @@
       <img class="site-box slogan" src="../assets/slogan.png">
     </div>
     <a href="javascript:void(0);" class="btn btn-primary" @click="_download">立即下载</a>
-    <wechatmask :value="show" v-on:onHide="_onHide" msg='选择在"浏览器"中打开'></wechatmask>
+    <wechatmask :value="show" v-on:onHide="_onHide" msg='选择在"浏览器或Safari"中打开'></wechatmask>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
   methods: {
     _download () {
       // 安卓微信环境下打开浏览器,IOS环境下打开appstore
-      if (this.isWeixin && this.system === 'Android') {
+      if (this.isWeixin) {
         this.show = true
       } else {
         (this.system === 'IOS' ? window.location.href = 'https://appsto.re/cn/2jqVhb.i' : window.location.href = 'http://peifeifarmer.qmant.com/apk/ant_farmer.apk')
