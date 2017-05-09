@@ -3,7 +3,13 @@
     ["env", { "modules": false }],
     "stage-2"
   ],
-  "plugins": ["transform-runtime"],
+  "plugins": ["transform-runtime",
+    [
+      "babel-plugin-component", {
+        "libraryName": "wdui"
+      }
+    ]
+  ],
   "comments": false,
   "env": {
     "test": {
