@@ -1,8 +1,8 @@
 <template>
   <div class="antmask" :style="{display: show ? 'block' : 'none'}" @click="onClickMask">
     <div class="antmask_center">
-      <div class="antmask_center_title">选择咨询单位</div>
-      <div class="scroll-view" style="max-height:18rem;">
+      <div class="antmask_center_title">请选择咨询单位</div>
+      <div class="scroll-view" style="max-height:20rem;">
         <slot name="value"></slot>
       </div>
     </div>
@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'Dialog',
   props: {
     value: {
       type: Boolean,
@@ -59,6 +60,6 @@ export default {
   background:#fff;
 }
 .antmask_center_title{
-  padding:.25rem .75rem;
+  padding:.5rem 1rem;
 }
 </style>
