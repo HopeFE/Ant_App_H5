@@ -1,7 +1,7 @@
 <template>
-  <div class="antmask" :style="{display: show ? 'block' : 'none'}" @click="onClickMask">
+  <div class="antmask" :style="{display: show ? 'block' : 'none'}" >
     <div class="antmask_center">
-      <div class="antmask_center_title">请选择咨询单位</div>
+      <div class="antmask_center_title" @click="onClickMask">请选择咨询单位<span style="float:right;color:#ff520c">X</span></div>
       <div class="scroll-view" style="max-height:20rem;">
         <slot name="value"></slot>
       </div>

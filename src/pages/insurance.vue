@@ -27,7 +27,7 @@ export default {
     }
   },
   metaInfo: {
-    title: '我要保险'
+    title: '农业保险'
   },
   methods: {
     ...mapActions(['getInsurance', 'setInsuranceScroll'])

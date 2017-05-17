@@ -27,7 +27,7 @@ export default {
     }
   },
   metaInfo: {
-    title: '我要贷款'
+    title: '农业贷款'
   },
   methods: {
     ...mapActions(['getCredit', 'setCreditScroll'])

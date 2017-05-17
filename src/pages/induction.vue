@@ -3,16 +3,16 @@
     <header class="flex-center flex-middle site-box">
       <img class="site-box logo" :src="img+'?imageMogr2/auto-orient/thumbnail/690x350!/format/jpg/interlace/1/blur/1x0/quality/80|imageslim'">
     </header>
-    <div v-html="article" style="padding:1rem;font-size:1.5rem;"></div>
-    <a href="javascript:void(0);" class="btn btn-primary contacts" @click="show == true">电话咨询</a>
-    <Dialog :value="show" v-on:onHide="_onHide">
+    <div v-html="article" style="padding:1rem 1rem 5rem;font-size:1.5rem;"></div>
+    <a href="javascript:void(0);" class="btn btn-primary contacts" @click="show = true">电话咨询</a>
+    <ant-dialog :value="show" v-on:onHide="_onHide">
       <div slot="value">
         <a :href="'tel:'+tel.contacts_phone" v-for="tel in contacts" class="dialog_tel">
           <span style="color:#333">{{tel.contacts_name}}</span><br/>
           {{tel.contacts_phone}}
         </a>
       </div>
-    </Dialog>
+    </ant-dialog>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ import Dialog from '@/components/dialog'
 
 export default {
   name: 'credit',
-  components: {Dialog},
+  components: {'ant-dialog': Dialog},
   computed: {
     ...mapGetters(['credit', 'insurance', 'contacts', 'route'])
   },
@@ -31,11 +31,11 @@ export default {
       article: [],
       id: '',
       img: '',
-      show: true
+      show: false
     }
   },
   metaInfo: {
-    title: '我要贷款'
+    title: ''
   },
   methods: {
     ...mapActions(['getContacts']),
@@ -65,7 +65,7 @@ export default {
 img{margin:0;}
 .contacts{
   width:95%;
-  margin:0 auto;
+  margin:5rem auto 0;
   position:fixed;
   bottom:10px;
   right:2.5%;

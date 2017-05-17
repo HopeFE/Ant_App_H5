@@ -77,7 +77,8 @@ export const getCredit = ({rootState, commit, state}) => {
 
 /** 获取咨询单位 */
 export const getContacts = ({ rootState, commit }, params) => {
-  let type = (rootState.route.name.indexOf('insurance') !== -1 ? '1' : '2')
+  let type = (rootState.route.path.indexOf('insurance') === -1 ? '1' : '2')
+  console.log(type)
   return new Promise((resolve, reject) => {
     axios({
       method: 'get',
