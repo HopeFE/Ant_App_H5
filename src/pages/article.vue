@@ -1,7 +1,7 @@
 <template>
-  <div class="container" style="font-size:.4rem;">
+  <div class="container" style="font-size:1.7rem;">
     <template v-if="article.title">
-      <header>
+      <header style="font-size:1.8rem">
         <h5 class="title">{{article.title}}</h5>
         <p class="author">{{article.news_source}} {{article.create_date}}</p>
       </header>
@@ -92,14 +92,14 @@ export default {
 <style scoped>
 .btn{
   padding: 8px 10px;
-  font-size: .5rem;
+  font-size: 1rem;
 }
 .bottom_fixed{
   position:fixed;width:100%;bottom:0px;right:0;background:#fff;height:auto;padding: .3rem;
 }
 .title{
   margin-top:.35rem;
-  font-size:.6rem;
+  font-size:2.6rem;
 }
 .author{
   color: #333;
