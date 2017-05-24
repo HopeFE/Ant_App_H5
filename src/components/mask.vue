@@ -59,7 +59,7 @@ export default {
 }
 .antmask_weixin h3{
   font-weight: normal;
-  font-size:1.6rem;
+  font-size:.6rem;
   margin:0;
 }
 .antmask_weixin{

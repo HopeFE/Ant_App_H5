@@ -2,11 +2,10 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-> Vue.js(2.x)全家桶项目 爱农田APP分享、下载
+> Vue.js(2.x)全家桶项目 爱农田APP
 
 ## 演示地址
 
-手机模式下查看
 -	[DEMO](http://peifeifarmer.qmant.com/share/index.html#/article/255)
 
 ## 技术简述
@@ -35,12 +34,12 @@
 
 ## 安装
 ```
-  npm install //安装依赖包
+yarn/npm install //安装依赖包
 ```
 
 ## 使用
 ```
-npm run dev     //进入开发模式
-npm run build   //打包生成的目录在dist下
-npm run build --report   //打包并生成报告
+yarn/npm run dev     //进入开发模式
+yarn/npm run build   //打包生成的目录在dist下
+yarn/npm run build --report   //打包并生成报告
 ```

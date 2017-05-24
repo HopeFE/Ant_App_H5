@@ -13,9 +13,12 @@ export default {
 </script>
 
 <style>
-body{
+html,body{
   background-color:#fff;
-  font-size:1.5rem;
+  height:100%;
+}
+#app{
+  height:100%;
 }
 img{
   margin:6px 0;
